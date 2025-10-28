@@ -4,83 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Short Bio - Dr. Gesesew R. Habtie</title>
-  <style>
-
-  <header>
-    <h1>Short Bio</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="research.html">Research</a> |
-      <a href="teaching.html">Teaching</a> |
-      <a href="Short Bio.html">Short Bio</a> 
-    </nav>
-  </header>
-    
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #0b0e16;
-      color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-      line-height: 1.8;
-      background-image: url('images/cvs.jpeg'); 
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
-      padding: 40px;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    }
-
-    h1 {
-      text-align: center;
-      color: #ffcc66;
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.1em;
-      text-align: justify;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #ccc;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Header with profile and navigation -->
+  <header>
+    <img src="images/profile.jpg" alt="Profile photo" class="profile">
+    <h1>Dr. Gesesew R. Habtie</h1>
+    <p>Stellar Astrophysics | Classical Novae | Symbiotic Novae</p>
+
+    <!-- Hamburger menu for mobile -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="Short Bio.html">Short Bio</a>
+    </nav>
+  </header>
+
+  <!-- Overlay and content section -->
   <div class="overlay">
-    <div class="container">
-      <h1>Short Bio</h1>
+    <div class="section">
+      <h2>Short Bio</h2>
       <p>
-        My name is Gesesew Reta. I grew up in a small village called Toll, located about 250 km north of Addis Ababa, Ethiopia, in a farming family whose livelihood depended entirely on agriculture. Like my family, I also worked on the farm until I completed the nearby elementary school (up to grade 8). I then moved to the small town of Molale to pursue my secondary education. After successfully completing high school, I joined Debre Berhan University for my bachelor’s degree and became part of the Department of Physics—although my first preference had actually been mathematics. Despite that, I graduated with distinction, ranking third in my class. At that time, I never imagined becoming an astronomer; I simply hoped to teach physics in high school. However, I was later given the opportunity to continue my studies, earning a Master’s degree from Dilla University and a second Master’s from the University of Ghana. Eventually, I traveled to India to pursue my Ph.D. in Astronomy, which I successfully completed in 2025 after overcoming numerous challenges, including delays caused by the global pandemic.
+        My name is Gesesew Reta. I grew up in a small village called Toll, located about 250 km north of Addis Ababa, Ethiopia, in a farming family whose livelihood depended entirely on agriculture. Like my family, I also worked on the farm until I completed the nearby elementary school (up to grade 8). I then moved to the small town of Molale to pursue my secondary education. After completing high school, I joined Debre Berhan University for my bachelor’s degree and became part of the Department of Physics—although my first preference had been mathematics. I graduated with distinction, ranking third in my class. I later earned two Master’s degrees (from Dilla University and the University of Ghana) and completed my Ph.D. in Astronomy in India in 2025, overcoming various challenges including delays caused by the global pandemic.
       </p>
-      <footer>
-        &copy; 2025 Gesesew Reta Habtie | All rights reserved.
-      </footer>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Gesesew Reta Habtie | Built with ♥ using GitHub Pages.
+  </footer>
+
+  <!-- Hamburger menu script -->
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.navbar');
+      nav.classList.toggle('show');
+    }
+  </script>
+
 </body>
 </html>

@@ -122,3 +122,32 @@ a:hover {
     display: block;
   }
 }
+/* --- Social media links --- */
+.social-links {
+  margin-top: 0.8rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin: 0 0.6rem;
+}
+
+.social-links i {
+  font-size: 1.6rem;
+  color: #ffcc80;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-links i:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Optional: center footer text and icons neatly */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #1a237e;
+  color: white;
+  font-size: 0.9rem;
+}

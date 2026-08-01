@@ -4,18 +4,19 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-
-  /* Text color */
   color: white;
 
-  /* Astronomy background */
-  background-image: url("images/Astronomy-banner-2.jpg");
+  background:
+    linear-gradient(
+      rgba(5, 10, 30, 0.70),
+      rgba(5, 10, 30, 0.70)
+    ),
+    url("images/space-background.jpg");
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
-  /* Fallback color while image loads */
   background-color: #0b1026;
 }
 

@@ -3,9 +3,20 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f7fa;
-  color: #222;
   line-height: 1.6;
+
+  /* Text color */
+  color: white;
+
+  /* Astronomy background */
+  background-image: url("images/Astronomy-banner-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  /* Fallback color while image loads */
+  background-color: #0b1026;
 }
 
 /* Header section */
